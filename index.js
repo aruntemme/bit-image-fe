@@ -44,6 +44,7 @@ $(document).ready(function () {
     type: 'GET',
     success: function (data) {
       console.log(data);
+      data = JSON.parse(data);
       for (var i = 0; i < data.length; i++) {
         var cardHtml = `<div class="card mt-5 ml-5" style="width: 18rem">
     <img
